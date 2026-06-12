@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["nodejs_20"]
+
+[phases.install]
+cmds = ["npm install --legacy-peer-deps"]
+
+[phases.build]
+cmds = ["DISABLE_ESLINT_PLUGIN=true npm run build:static"]
+
+[start]
+cmd = "npm run serve"

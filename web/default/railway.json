@@ -1,0 +1,12 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "npm install --legacy-peer-deps && DISABLE_ESLINT_PLUGIN=true npm run build:static"
+  },
+  "deploy": {
+    "startCommand": "npm run serve",
+    "healthcheckPath": "/",
+    "healthcheckTimeout": 100
+  }
+}
