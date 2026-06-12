@@ -1,0 +1,77 @@
+.usage-guide .usage-stat-card {
+  min-height: 150px;
+}
+
+.usage-guide .usage-stat-card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.usage-guide .usage-stat-text {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: 1.05rem !important;
+  line-height: 1.35 !important;
+}
+
+.usage-guide .usage-steps .item {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 0 !important;
+}
+
+.usage-guide .usage-steps .icon {
+  color: #2185d0;
+  font-size: 1.15rem;
+  margin-top: 2px;
+}
+
+.usage-guide .usage-code-block {
+  border: 1px solid rgba(34, 36, 38, 0.1) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04) !important;
+  border-radius: 8px !important;
+}
+
+.usage-guide .usage-code-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.usage-guide .usage-code-header h4 {
+  margin-bottom: 4px !important;
+}
+
+.usage-guide .usage-code-header p {
+  color: #666;
+  margin: 0;
+}
+
+.usage-guide pre {
+  background: #111827;
+  border-radius: 8px;
+  color: #f9fafb;
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 0;
+  max-height: 360px;
+  overflow: auto;
+  padding: 16px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@media screen and (max-width: 768px) {
+  .usage-guide .usage-code-header {
+    flex-direction: column;
+  }
+
+  .usage-guide .usage-code-header .button {
+    width: 100%;
+  }
+}
